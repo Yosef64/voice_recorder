@@ -1,0 +1,48 @@
+// Slider(
+          //   min: 0,
+          //   max: duration!.inSeconds.toDouble(),
+          //   value: position!.inSeconds.toDouble(),
+          //   onChanged: (value) async {
+          //     final newPosition = Duration(seconds: value.toInt());
+          //     await audioPlayer.seek(newPosition);
+          //     setState(() {
+          //       position = newPosition;
+          //     });
+          //   },
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.symmetric(horizontal: 8),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //     children: [
+          //       Text(formatTime(position!)),
+          //       Text(formatTime(duration! - position!)),
+          //     ],
+          //   ),
+          // ),
+          // CircleAvatar(
+          //   child: IconButton(
+          //     onPressed: () async {
+          //       if (isPlaying) {
+          //         await audioPlayer.pause();
+          //         setState(() {
+          //           isPlaying = false;
+          //         });
+          //       } else {
+          //         await audioPlayer.play();
+          //         setState(() {
+          //           isPlaying = true;
+          //         });
+          //       }
+          //     },
+          //     icon: Icon(isPlaying ? Icons.pause : Icons.play_arrow),
+          //   ),
+          // ),
+          Future<bool> _requestPermission(Permission permission) async {
+    if (await permission.isGranted) {
+      return true;
+    } else {
+      final result = await permission.request();
+      return result == PermissionStatus.granted;
+    }
+  }
