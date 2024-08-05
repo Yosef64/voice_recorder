@@ -79,8 +79,7 @@ class _RecordingState extends State<Recording> with TickerProviderStateMixin {
         appBar: AppBar(
           title: Text(
             "Voice Recorder",
-            style: GoogleFonts.montserrat(
-                fontSize: 25, fontWeight: FontWeight.w400),
+            style: GoogleFonts.sora(fontSize: 25, fontWeight: FontWeight.w600),
           ),
           centerTitle: true,
         ),
