@@ -1,6 +1,6 @@
 # voice_recorder
 
-<img src="https://firebasestorage.googleapis.com/v0/b/rent-ffb49.appspot.com/o/photos%2FScreenshot_20240905-213642%5B1%5D.jpg?alt=media&token=f4a60258-9b88-4c49-bdcc-e24ac242cc0e" alt="img" width=40 height=50 />
+<img src="https://firebasestorage.googleapis.com/v0/b/rent-ffb49.appspot.com/o/photos%2FScreenshot_20240905-213642%5B1%5D.jpg?alt=media&token=f4a60258-9b88-4c49-bdcc-e24ac242cc0e" alt="img" width=100 height=100 />
 
 ## Getting Started
 
